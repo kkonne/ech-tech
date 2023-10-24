@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ech tech © software development agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/styles/utils.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description"
+        content="Software development agency for specialised ecommerce solutions. Spryker expertise, consulting and development.">
+    <meta name=”robots” content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#about" role="navigation" data-value="About">About</a>
+            <a href="#services" role="navigation" data-value="Services">Services</a>
+            <a href="#testimonials" role="navigation" data-value="Testimonials">Testimonials</a>
+            <a href="#contact" role="navigation" data-value="Contact">Contact</a>
+        </nav>
+
+        <div class="background-pattern"></div>
+        <div class="background-img"></div>
+        <img src="assets/images/brand_logo_light.png" alt="Brand logo" class="logo-img" draggable="false">
+    </header>
+
+    <div class="separator"></div>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h1 class="my-5">
+                ech tech.
+                <br />
+                pushing the boundaries of ecommerce.
+            </h1>
+
+            <div class="key-points">
+                <div class="key-points__image-wrap">
+                    <img src="./assets/images/ecommerce-icon.svg" alt="Image 1" />
+                </div>
+                <div class="text-left">
+                    <article>
+                        <h2>E commerce</h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut nisi voluptas neque minus!
+                        Eveniet
+                        tenetur recusandae explicabo, iusto autem, dolores fugiat quam cumque cum veritatis laboriosam
+                        eum
+                        quae harum.
+                    </article>
+                </div>
+                <div class="key-points__image-wrap order-lg-1">
+                    <img src="./assets/images/software-dev-icon.svg" alt="Image 2" />
+                </div>
+                <div class="text-lg-right">
+                    <article>
+                        <h2>Software development</h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum architecto reiciendis adipisci?
+                        Facilis corporis quasi repudiandae facere excepturi quidem totam ipsam, odio vel dolorum dolores
+                        sunt assumenda impedit rem ad.
+                    </article>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <p class="font-light">Provide us with all the necessary info and watch the results form in front of Your
+                    eyes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services container">
+        <h2 class="my-5">services we offer</h2>
+
+        <ul class="my-5">
+            <li>Software development</li>
+            <li>Ecommerce consulting</li>
+            <li>Spryker expertise</li>
+            <li>Custom features</li>
+            <li>Creating MVPs</li>
+            <li>24h support</li>
+            <li>Maintenance</li>
+        </ul>
+
+        <div class="my-5">
+            <p class="font-light">We will make sure to get satisfied customers by providing them with high quality
+                service.</p>
+            <br />
+            <a href="#contact" class="btn btn--default">Get in touch</a>
+        </div>
+
+        <div class="spacer-sm"></div>
+    </section>
+
+    <section id="testimonials" class="testimonials container">
+        <h2 class="my-5">testimonials</h2>
+
+        <div class="testimonials__wrap">
+            <div class="testimonials__item">
+                <h3>About You</h3>
+                <blockquote><i>"We are super satisfied. Recommendations!"</i></blockquote>
+            </div>
+            <div class="testimonials__item">
+                <h3>Office Shoes</h3>
+                <blockquote><i>"Great team!"</i></blockquote>
+            </div>
+            <div class="testimonials__item">
+                <h3>Mepas Mall</h3>
+                <blockquote><i>"Professionals! Will work together again soon!"</i></blockquote>
+            </div>
+        </div>
+
+        <div class="spacer-sm"></div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="contact-title">Contact us</h2>
+
+        <img src="https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Contact section decorative photo - two retro phones" draggable="false">
+
+        <div class="container content">
+            <h3>Reach out!</h3>
+            <form id="contact-form" class="contact-form">
+                <input type="text" placeholder="Name" aria-label="Name" aria-required="true" id="name-input"
+                    class="text-input" name="user_name" />
+                <input type="text" placeholder="Email" aria-label="Email" aria-required="true" id="email-input"
+                    class="text-input" name="user_email" />
+                <input type="text" placeholder="Subject" aria-label="Subject" aria-required="true" id="subject-input"
+                    class="text-input" name="subject" />
+                <textarea type="text" placeholder="Message" aria-label="Message" aria-required="true" id="message-input"
+                    rows="4" class="text-input" name="message"></textarea>
+                <button type="submit" class="btn btn--default">Send</button>
+
+                <span class="alert alert--error display-none" id="alert-error"></span>
+                <span class="alert alert--success display-none" id="alert-success"></span>
+            </form>
+
+            <p class="text-sm">or write an email to info@ech-tech.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <span class="mx-1">
+            ech tech 2023 © All rights reserved
+        </span>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./main.js" defer></script>
+    <script type="text/javascript">
+        const EMAILJS_PUBLIC = "<API_KEY>";
+        (function () {
+            emailjs.init(EMAILJS_PUBLIC);
+        })();
+    </script>
+
+</body>
+
+</html>
