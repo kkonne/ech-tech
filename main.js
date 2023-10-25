@@ -1,13 +1,29 @@
-const HEADER_MENU = document.querySelector("header");
-const CONTACT_FORM = document.getElementById("contact-form");
+const header = document.querySelector("header");
+const contactForm = document.getElementById("contact-form");
+const navItemsList = document.querySelectorAll("nav > a");
+const testimonialItemsWrap = document.querySelector(
+  ".testimonials .testimonials__wrap"
+);
+const testimonialItemsList = testimonialItemsWrap.querySelectorAll(
+  ".testimonials__item"
+);
 
 const setMenuItemEffect = (item, index) => {
   item.onmouseover = () => {
-    HEADER_MENU.dataset.activeIndex = index;
+    header.dataset.activeIndex = index;
   };
   item.ontouchstart = () => {
-    HEADER_MENU.dataset.activeIndex = index;
+    header.dataset.activeIndex = index;
   };
+};
+
+const handleTestimonialEffect = (event) => {
+  const { currentTarget: target } = event;
+  const rect = target.getBoundingClientRect(),
+    x = event.clientX - rect.left,
+    y = event.clientY - rect.top;
+  target.style.setProperty("--mouse-x", `${x}px`);
+  target.style.setProperty("--mouse-y", `${y}px`);
 };
 
 const setMessage = (type, message) => {
@@ -29,8 +45,23 @@ const handleFormSubmit = (event) => {
 };
 
 const onInit = () => {
-  document.querySelectorAll("nav > a").forEach(setMenuItemEffect);
-  CONTACT_FORM.addEventListener("submit", handleFormSubmit);
+  navItemsList.forEach(setMenuItemEffect);
+  // testimonialItemsList.forEach((testimonialItem) => {
+  //   testimonialItem.onmousemove = (event) => handleTestimonialEffect(event);
+  // });
+  testimonialItemsWrap.onmousemove = (event) => {
+    for (const testimonialItem of document.getElementsByClassName(
+      "testimonials__item"
+    )) {
+      const rect = testimonialItem.getBoundingClientRect(),
+        x = event.clientX - rect.left,
+        y = event.clientY - rect.top;
+
+      testimonialItem.style.setProperty("--mouse-x", `${x}px`);
+      testimonialItem.style.setProperty("--mouse-y", `${y}px`);
+    }
+  };
+  contactForm.addEventListener("submit", handleFormSubmit);
 };
 
 onInit();

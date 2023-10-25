@@ -44,6 +44,10 @@
   justify-self: unset;
 }
 
+.max-w-45ch {
+  max-width: 45ch;
+}
+
 @media screen and (min-width: 576px) {
   .ml-sm-1 {
     margin-left: calc(env(safe-area-inset-left) + 1rem);
