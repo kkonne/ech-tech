@@ -1,5 +1,4 @@
 const header = document.querySelector("header");
-const contactForm = document.getElementById("contact-form");
 const navItemsList = document.querySelectorAll("nav > a");
 const testimonialItemsWrap = document.querySelector(
   ".testimonials .testimonials__wrap"
@@ -46,9 +45,6 @@ const handleFormSubmit = (event) => {
 
 const onInit = () => {
   navItemsList.forEach(setMenuItemEffect);
-  // testimonialItemsList.forEach((testimonialItem) => {
-  //   testimonialItem.onmousemove = (event) => handleTestimonialEffect(event);
-  // });
   testimonialItemsWrap.onmousemove = (event) => {
     for (const testimonialItem of document.getElementsByClassName(
       "testimonials__item"
@@ -61,7 +57,6 @@ const onInit = () => {
       testimonialItem.style.setProperty("--mouse-y", `${y}px`);
     }
   };
-  contactForm.addEventListener("submit", handleFormSubmit);
 };
 
 onInit();
