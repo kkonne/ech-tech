@@ -1,5 +1,5 @@
-# Ech tech
+# Master the market
 
-### Ech tech simple minimalist landing page
+### Master the market simple minimalist landing page
 
-Check it out: [www.ech-tech.com](https://www.ech-tech.com/).
+Check it out: [www.master-the-market.com](https://www.master-the-market.com/).
