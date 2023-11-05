@@ -254,6 +254,7 @@ section.testimonials
   min-height: 1rem;
   cursor: pointer;
   background-color: #ffffff16;
+  min-height: 16rem;
 }
 .testimonials .testimonials__item:hover::before{
   opacity: 1;
